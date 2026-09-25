@@ -1,0 +1,300 @@
+{
+  "tool": {
+    "id": "padua",
+    "title": "Escore de Pádua",
+    "short": "Risco de TEV no paciente clínico internado",
+    "desc": "Escore de Pádua: risco de tromboembolismo venoso em pacientes clínicos internados; 4 pontos ou mais indicam profilaxia farmacológica.",
+    "lead": "Identifica, entre os pacientes clínicos (não cirúrgicos) internados, os de alto risco de tromboembolismo venoso que se beneficiam de tromboprofilaxia.",
+    "spec": [
+      "hematologia-e-hemoterapia",
+      "clinica-medica",
+      "oncologia-clinica",
+      "angiologia"
+    ],
+    "fields": [
+      [
+        "cancer",
+        "Câncer ativo (metástase ou quimio/radioterapia nos últimos 6 meses)",
+        "chk",
+        {
+          "pts": 3
+        }
+      ],
+      [
+        "tev",
+        "TEV prévio (exceto trombose venosa superficial)",
+        "chk",
+        {
+          "pts": 3
+        }
+      ],
+      [
+        "mobilidade",
+        "Mobilidade reduzida (repouso no leito, com ida ao banheiro, por ≥ 3 dias)",
+        "chk",
+        {
+          "pts": 3
+        }
+      ],
+      [
+        "trombofilia",
+        "Trombofilia conhecida",
+        "chk",
+        {
+          "pts": 3
+        }
+      ],
+      [
+        "trauma",
+        "Trauma ou cirurgia no último mês",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "idade",
+        "Idade ≥ 70 anos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "icc",
+        "Insuficiência cardíaca e/ou respiratória",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "iam",
+        "IAM agudo ou AVC isquêmico",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "infeccao",
+        "Infecção aguda e/ou doença reumatológica",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "obesidade",
+        "Obesidade (IMC ≥ 30 kg/m²)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "hormonio",
+        "Tratamento hormonal em curso",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escore de Pádua",
+      "unit": "",
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco: TEV em 0,3% sem profilaxia",
+          "Profilaxia farmacológica não indicada; estimular deambulação."
+        ],
+        [
+          4,
+          "high",
+          "Alto risco: TEV em 11% sem profilaxia",
+          "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento."
+        ]
+      ]
+    },
+    "formula": "<p>3 pontos: câncer ativo, TEV prévio, mobilidade reduzida, trombofilia · 2 pontos: trauma ou cirurgia recente · 1 ponto: idade ≥ 70, insuficiência cardíaca/respiratória, IAM ou AVC isquêmico, infecção aguda ou doença reumatológica, obesidade, terapia hormonal. Máximo: 20.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Risco",
+        "TEV em 90 dias sem profilaxia"
+      ],
+      [
+        "0–3",
+        "Baixo",
+        "0,3%"
+      ],
+      [
+        "≥ 4",
+        "Alto",
+        "11,0% (2,2% com profilaxia)"
+      ]
+    ],
+    "tips": [
+      "Vale para pacientes clínicos; em cirúrgicos, use Caprini.",
+      "Antes de prescrever, avalie o risco de sangramento (IMPROVE): sangramento ativo, plaquetas &lt; 50 mil ou úlcera ativa pedem profilaxia mecânica.",
+      "Reavalie a cada mudança clínica: a mobilidade reduzida e a infecção mudam durante a internação.",
+      "A profilaxia estendida após a alta não é rotina no paciente clínico: o benefício é contrabalançado pelo sangramento."
+    ],
+    "sources": [
+      [
+        "Barbar S et al. A risk assessment model for the identification of hospitalized medical patients at risk for venous thromboembolism: the Padua Prediction Score. J Thromb Haemost, 2010.",
+        "https://doi.org/10.1111/j.1538-7836.2010.04044.x"
+      ],
+      [
+        "Kahn SR et al. Prevention of VTE in nonsurgical patients: antithrombotic therapy and prevention of thrombosis, 9th ed: American College of Chest Physicians evidence-based clinical practice guidelines. Chest, 2012.",
+        "https://doi.org/10.1378/chest.11-2296"
+      ]
+    ],
+    "cases": [
+      [
+        "Pneumonia em paciente de 75 anos: 2 pontos",
+        {
+          "idade": true,
+          "infeccao": true
+        },
+        {
+          "score": 2,
+          "level": "low"
+        }
+      ],
+      [
+        "Corte: câncer ativo e ICC: 4 pontos",
+        {
+          "cancer": true,
+          "icc": true
+        },
+        {
+          "score": 4,
+          "level": "high"
+        }
+      ],
+      [
+        "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        {
+          "mobilidade": true,
+          "tev": true,
+          "idade": true,
+          "obesidade": true
+        },
+        {
+          "score": 8,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Escore",
+    "config": {
+      "unit": "",
+      "label": "Escore de Pádua",
+      "fields": [
+        [
+          "cancer",
+          "chk",
+          3
+        ],
+        [
+          "tev",
+          "chk",
+          3
+        ],
+        [
+          "mobilidade",
+          "chk",
+          3
+        ],
+        [
+          "trombofilia",
+          "chk",
+          3
+        ],
+        [
+          "trauma",
+          "chk",
+          2
+        ],
+        [
+          "idade",
+          "chk",
+          1
+        ],
+        [
+          "icc",
+          "chk",
+          1
+        ],
+        [
+          "iam",
+          "chk",
+          1
+        ],
+        [
+          "infeccao",
+          "chk",
+          1
+        ],
+        [
+          "obesidade",
+          "chk",
+          1
+        ],
+        [
+          "hormonio",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco: TEV em 0,3% sem profilaxia",
+          "Profilaxia farmacológica não indicada; estimular deambulação."
+        ],
+        [
+          4,
+          "high",
+          "Alto risco: TEV em 11% sem profilaxia",
+          "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento."
+        ]
+      ]
+    },
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}

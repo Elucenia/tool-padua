@@ -1,0 +1,54 @@
+[
+  {
+    "label": "Pneumonia em paciente de 75 anos: 2 pontos",
+    "input": {
+      "idade": true,
+      "infeccao": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": true,
+      "infeccao": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Corte: câncer ativo e ICC: 4 pontos",
+    "input": {
+      "cancer": true,
+      "icc": true
+    },
+    "expected": {
+      "score": 4,
+      "level": "high"
+    },
+    "originalInput": {
+      "cancer": true,
+      "icc": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+    "input": {
+      "mobilidade": true,
+      "tev": true,
+      "idade": true,
+      "obesidade": true
+    },
+    "expected": {
+      "score": 8,
+      "level": "high"
+    },
+    "originalInput": {
+      "mobilidade": true,
+      "tev": true,
+      "idade": true,
+      "obesidade": true
+    },
+    "expandedZeroOptions": []
+  }
+]
