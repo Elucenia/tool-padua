@@ -1,11 +1,11 @@
-/* tool-padua · Elucenia · https://github.com/Elucenia/tool-padua
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-padua · ELUCENIA · https://github.com/Elucenia/tool-padua
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"padua","title":"Escore de Pádua","fields":[["cancer","Câncer ativo (metástase ou quimio/radioterapia nos últimos 6 meses)","chk",{"pts":3}],["tev","TEV prévio (exceto trombose venosa superficial)","chk",{"pts":3}],["mobilidade","Mobilidade reduzida (repouso no leito, com ida ao banheiro, por ≥ 3 dias)","chk",{"pts":3}],["trombofilia","Trombofilia conhecida","chk",{"pts":3}],["trauma","Trauma ou cirurgia no último mês","chk",{"pts":2}],["idade","Idade ≥ 70 anos","chk",{"pts":1}],["icc","Insuficiência cardíaca e/ou respiratória","chk",{"pts":1}],["iam","IAM agudo ou AVC isquêmico","chk",{"pts":1}],["infeccao","Infecção aguda e/ou doença reumatológica","chk",{"pts":1}],["obesidade","Obesidade (IMC ≥ 30 kg/m²)","chk",{"pts":1}],["hormonio","Tratamento hormonal em curso","chk",{"pts":1}]],"config":{"unit":"","label":"Escore de Pádua","fields":[["cancer","chk",3],["tev","chk",3],["mobilidade","chk",3],["trombofilia","chk",3],["trauma","chk",2],["idade","chk",1],["icc","chk",1],["iam","chk",1],["infeccao","chk",1],["obesidade","chk",1],["hormonio","chk",1]],"bands":[[0,"low","Baixo risco: TEV em 0,3% sem profilaxia","Profilaxia farmacológica não indicada; estimular deambulação."],[4,"high","Alto risco: TEV em 11% sem profilaxia","Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
