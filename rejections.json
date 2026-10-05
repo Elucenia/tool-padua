@@ -1,0 +1,269 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cancer",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": "2",
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cancer"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tev",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": "2",
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tev"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean mobilidade",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": "2",
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "mobilidade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean trombofilia",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": "2",
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "trombofilia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean trauma",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": "2",
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "trauma"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idade",
+    "input": {
+      "idade": "2",
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean icc",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": "2",
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "icc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean iam",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": "2",
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "iam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean infeccao",
+    "input": {
+      "idade": true,
+      "infeccao": "2",
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "infeccao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean obesidade",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": "2",
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "obesidade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hormonio",
+    "input": {
+      "idade": true,
+      "infeccao": true,
+      "cancer": false,
+      "tev": false,
+      "mobilidade": false,
+      "trombofilia": false,
+      "trauma": false,
+      "icc": false,
+      "iam": false,
+      "obesidade": false,
+      "hormonio": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hormonio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

@@ -5,6 +5,7 @@
     "short": "Risco de TEV no paciente clínico internado",
     "desc": "Escore de Pádua: risco de tromboembolismo venoso em pacientes clínicos internados; 4 pontos ou mais indicam profilaxia farmacológica.",
     "lead": "Identifica, entre os pacientes clínicos (não cirúrgicos) internados, os de alto risco de tromboembolismo venoso que se beneficiam de tromboprofilaxia.",
+    "kind": "Escore",
     "spec": [
       "hematologia-e-hemoterapia",
       "clinica-medica",
@@ -16,133 +17,70 @@
         "cancer",
         "Câncer ativo (metástase ou quimio/radioterapia nos últimos 6 meses)",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ],
       [
         "tev",
         "TEV prévio (exceto trombose venosa superficial)",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ],
       [
         "mobilidade",
         "Mobilidade reduzida (repouso no leito, com ida ao banheiro, por ≥ 3 dias)",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ],
       [
         "trombofilia",
         "Trombofilia conhecida",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ],
       [
         "trauma",
         "Trauma ou cirurgia no último mês",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "idade",
         "Idade ≥ 70 anos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "icc",
         "Insuficiência cardíaca e/ou respiratória",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "iam",
         "IAM agudo ou AVC isquêmico",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "infeccao",
         "Infecção aguda e/ou doença reumatológica",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "obesidade",
         "Obesidade (IMC ≥ 30 kg/m²)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "hormonio",
         "Tratamento hormonal em curso",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Escore de Pádua",
-      "unit": "",
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco: TEV em 0,3% sem profilaxia",
-          "Profilaxia farmacológica não indicada; estimular deambulação."
-        ],
-        [
-          4,
-          "high",
-          "Alto risco: TEV em 11% sem profilaxia",
-          "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento."
-        ]
-      ]
-    },
     "formula": "<p>3 pontos: câncer ativo, TEV prévio, mobilidade reduzida, trombofilia · 2 pontos: trauma ou cirurgia recente · 1 ponto: idade ≥ 70, insuficiência cardíaca/respiratória, IAM ou AVC isquêmico, infecção aguda ou doença reumatológica, obesidade, terapia hormonal. Máximo: 20.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Risco",
-        "TEV em 90 dias sem profilaxia"
-      ],
-      [
-        "0–3",
-        "Baixo",
-        "0,3%"
-      ],
-      [
-        "≥ 4",
-        "Alto",
-        "11,0% (2,2% com profilaxia)"
-      ]
-    ],
-    "tips": [
-      "Vale para pacientes clínicos; em cirúrgicos, use Caprini.",
-      "Antes de prescrever, avalie o risco de sangramento (IMPROVE): sangramento ativo, plaquetas &lt; 50 mil ou úlcera ativa pedem profilaxia mecânica.",
-      "Reavalie a cada mudança clínica: a mobilidade reduzida e a infecção mudam durante a internação.",
-      "A profilaxia estendida após a alta não é rotina no paciente clínico: o benefício é contrabalançado pelo sangramento."
-    ],
     "sources": [
       [
         "Barbar S et al. A risk assessment model for the identification of hospitalized medical patients at risk for venous thromboembolism: the Padua Prediction Score. J Thromb Haemost, 2010.",
@@ -190,83 +128,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "Escore de Pádua",
-      "fields": [
-        [
-          "cancer",
-          "chk",
-          3
-        ],
-        [
-          "tev",
-          "chk",
-          3
-        ],
-        [
-          "mobilidade",
-          "chk",
-          3
-        ],
-        [
-          "trombofilia",
-          "chk",
-          3
-        ],
-        [
-          "trauma",
-          "chk",
-          2
-        ],
-        [
-          "idade",
-          "chk",
-          1
-        ],
-        [
-          "icc",
-          "chk",
-          1
-        ],
-        [
-          "iam",
-          "chk",
-          1
-        ],
-        [
-          "infeccao",
-          "chk",
-          1
-        ],
-        [
-          "obesidade",
-          "chk",
-          1
-        ],
-        [
-          "hormonio",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco: TEV em 0,3% sem profilaxia",
-          "Profilaxia farmacológica não indicada; estimular deambulação."
-        ],
-        [
-          4,
-          "high",
-          "Alto risco: TEV em 11% sem profilaxia",
-          "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -275,17 +136,501 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T17:23:41.435Z",
+      "total": 2048,
+      "passed": 2048,
+      "sourceRowCount": 2048,
+      "uniqueApiInputCount": 2048,
+      "sourceContextCount": 2048,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "3eed21047f95a14018fb8a0ece93ce1d7f3d32321034227ff7b5e8378c20a011",
+        "total": 2048,
+        "bankRowCount": 2048,
+        "uniqueApiInputCount": 2048,
+        "sourceContextCount": 2048,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          },
+          {
+            "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+            "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+          "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+        },
+        "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 2048,
+        "uniqueApiInputs": 2048,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+          "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+        }
+      },
+      "scope": "Exact integer weighted sum of 2048 stored selected category/flag tuples for padua. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+      "sources": [
+        {
+          "id": "padua",
+          "declaredEdition": "Barbar2010",
+          "numericEvidenceEdition": "Original2010 Table1/footnotes",
+          "url": "https://www.thebloodproject.com/wp-content/uploads/2021/10/Padua-score.pdf",
+          "doi": "10.1111/j.1538-7836.2010.04044.x",
+          "access": "Original2010 research PDF downloaded from educational mirror; Table1, footnotes and Methods on printed2451 visually inspected.",
+          "readScope": [
+            "Methods/setting/exclusion criteria and Table1, PDFp2/printed2451"
+          ],
+          "notVerified": [
+            "Raw eligibility for individual flags",
+            "Prophylaxis safety/choice, contemporary guideline conformance or patient VTE probability"
+          ],
+          "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+          "sourceFindings": []
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+      "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+        "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+        "recordedAt": "2026-10-04T18:58:10.338Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+          "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+          "summary": {
+            "checks": 55762,
+            "failed": 0,
+            "helperAssertions": 50346,
+            "sourceRows": 6947,
+            "uniqueInputObjects": 6947,
+            "freshNodeExecutions": 20841,
+            "methods": 137,
+            "allSourceRows": 60865,
+            "allUniqueInputs": 60792,
+            "allDuplicateRows": 73
+          },
+          "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+          "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+        },
+        "reviewedBankScope": "Exact integer weighted sum of 2048 stored selected category/flag tuples for padua. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "currentBinding": {
+          "source26BankSha256": "8b04281d1594f7d4d72d11287ec6d152fcb128839cffa983db4da9731363473f",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/padua/calculator.js",
+              "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/padua/calculator.js",
+              "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/padua/calculator.js",
+              "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 6144,
+      "actualVmExecutions": 6144,
+      "implementations": [
+        {
+          "app": "website",
+          "id": "padua",
+          "file": "apps/website/private/tool-code/padua/calculator.js",
+          "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+        },
+        {
+          "app": "dashboard",
+          "id": "padua",
+          "file": "apps/dashboard/private/tool-code/padua/calculator.js",
+          "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+        },
+        {
+          "app": "command-center",
+          "id": "padua",
+          "file": "apps/command-center/private/tool-code/padua/calculator.js",
+          "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+        }
+      ],
+      "qualifications": [
+        "Exact integer weighted sum of 2048 stored selected category/flag tuples for padua. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+        "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+        "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Padua Prediction Score/Barbar 2010:11 fatores,0–20; paciente clínicohospitalizado",
+    "implementationVersion": "padua@native-2026-10-03+2dc89004c4f2",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/20738765/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "3 pontos: câncer ativo, TEV prévio, mobilidade reduzida, trombofilia · 2 pontos: trauma ou cirurgia recente · 1 ponto: idade ≥ 70, insuficiência cardíaca/respiratória, IAM ou AVC isquêmico, infecção aguda ou doença reumatológica, obesidade, terapia hormonal. Máximo: 20.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "cancer",
+            "label": "Câncer ativo (metástase ou quimio/radioterapia nos últimos 6 meses)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tev",
+            "label": "TEV prévio (exceto trombose venosa superficial)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "mobilidade",
+            "label": "Mobilidade reduzida (repouso no leito, com ida ao banheiro, por ≥ 3 dias)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "trombofilia",
+            "label": "Trombofilia conhecida",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "trauma",
+            "label": "Trauma ou cirurgia no último mês",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "idade",
+            "label": "Idade ≥ 70 anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "icc",
+            "label": "Insuficiência cardíaca e/ou respiratória",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "iam",
+            "label": "IAM agudo ou AVC isquêmico",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "infeccao",
+            "label": "Infecção aguda e/ou doença reumatológica",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "obesidade",
+            "label": "Obesidade (IMC ≥ 30 kg/m²)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hormonio",
+            "label": "Tratamento hormonal em curso",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "ece4968b1c6c03a7c2860cd41252a86d085788fe87536aa4ec4f1dd20f2dc8a3"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Barbar S et al. A risk assessment model for the identification of hospitalized medical patients at risk for venous thromboembolism: the Padua Prediction Score. J Thromb Haemost, 2010.",
+          "url": "https://doi.org/10.1111/j.1538-7836.2010.04044.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A risk assessment model for the identification of hospitalized medical patients at risk for venous thromboembolism: the Padua Prediction Score.",
+            "year": "2010",
+            "firstPublicationDate": "2010-11-01",
+            "doi": "10.1111/j.1538-7836.2010.04044.x",
+            "pmid": "20738765",
+            "journal": "Journal of thrombosis and haemostasis : JTH",
+            "authors": "Barbar S, Noventa F, Rossetto V, Ferrari A, Brandolin B, Perlati M, De Bon E, Tormene D, Pagnan A, Prandoni P."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/20738765/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "e8c5ac65214d90a55e54acdcba63d18b8d8c05d0a9ae6480225f89295b601878",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Kahn SR et al. Prevention of VTE in nonsurgical patients: antithrombotic therapy and prevention of thrombosis, 9th ed: American College of Chest Physicians evidence-based clinical practice guidelines. Chest, 2012.",
+          "url": "https://doi.org/10.1378/chest.11-2296",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Prevention of VTE in nonsurgical patients: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines.",
+            "year": "2012",
+            "firstPublicationDate": "2012-02-01",
+            "doi": "10.1378/chest.11-2296",
+            "pmid": "22315261",
+            "pmcid": "PMC3278052",
+            "journal": "Chest",
+            "authors": "Kahn SR, Lim W, Dunn AS, Cushman M, Dentali F, Akl EA, Cook DJ, Balekian AA, Klein RC, Le H, Schulman S, Murad MH."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278052/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "4d55b71d32b0faea76631755c3ff71e2290434e601604c2b3fae81cb291bef63",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T17:23:41.435Z",
+        "total": 2048,
+        "passed": 2048,
+        "sourceRowCount": 2048,
+        "uniqueApiInputCount": 2048,
+        "sourceContextCount": 2048,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "3eed21047f95a14018fb8a0ece93ce1d7f3d32321034227ff7b5e8378c20a011",
+          "total": 2048,
+          "bankRowCount": 2048,
+          "uniqueApiInputCount": 2048,
+          "sourceContextCount": 2048,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+              "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+            },
+            {
+              "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+              "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+            "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+          },
+          "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 2048,
+          "uniqueApiInputs": 2048,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          }
+        },
+        "scope": "Exact integer weighted sum of 2048 stored selected category/flag tuples for padua. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "sources": [
+          {
+            "id": "padua",
+            "declaredEdition": "Barbar2010",
+            "numericEvidenceEdition": "Original2010 Table1/footnotes",
+            "url": "https://www.thebloodproject.com/wp-content/uploads/2021/10/Padua-score.pdf",
+            "doi": "10.1111/j.1538-7836.2010.04044.x",
+            "access": "Original2010 research PDF downloaded from educational mirror; Table1, footnotes and Methods on printed2451 visually inspected.",
+            "readScope": [
+              "Methods/setting/exclusion criteria and Table1, PDFp2/printed2451"
+            ],
+            "notVerified": [
+              "Raw eligibility for individual flags",
+              "Prophylaxis safety/choice, contemporary guideline conformance or patient VTE probability"
+            ],
+            "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+            "sourceFindings": []
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+        "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+          "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+          "recordedAt": "2026-10-04T18:58:10.338Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+            "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+            "summary": {
+              "checks": 55762,
+              "failed": 0,
+              "helperAssertions": 50346,
+              "sourceRows": 6947,
+              "uniqueInputObjects": 6947,
+              "freshNodeExecutions": 20841,
+              "methods": 137,
+              "allSourceRows": 60865,
+              "allUniqueInputs": 60792,
+              "allDuplicateRows": 73
+            },
+            "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+            "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+          },
+          "reviewedBankScope": "Exact integer weighted sum of 2048 stored selected category/flag tuples for padua. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+          "currentBinding": {
+            "source26BankSha256": "8b04281d1594f7d4d72d11287ec6d152fcb128839cffa983db4da9731363473f",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/padua/calculator.js",
+                "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/padua/calculator.js",
+                "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/padua/calculator.js",
+                "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 6144,
+        "actualVmExecutions": 6144,
+        "implementations": [
+          {
+            "app": "website",
+            "id": "padua",
+            "file": "apps/website/private/tool-code/padua/calculator.js",
+            "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+          },
+          {
+            "app": "dashboard",
+            "id": "padua",
+            "file": "apps/dashboard/private/tool-code/padua/calculator.js",
+            "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+          },
+          {
+            "app": "command-center",
+            "id": "padua",
+            "file": "apps/command-center/private/tool-code/padua/calculator.js",
+            "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+          }
+        ],
+        "qualifications": [
+          "Exact integer weighted sum of 2048 stored selected category/flag tuples for padua. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+          "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+          "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+          "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+    },
+    "limits": "O Padua foi estudado em pacientes clínicos internados em medicina interna, com seguimento de tromboembolismo sintomático até 90 dias. A estratificação trombótica deve ser acompanhada de avaliação de sangramento, contraindicações e protocolo de profilaxia. O total não substitui essa análise nem implica aplicação automática à população cirúrgica.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.906Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não contém pesos/corte completo, exclusões ou avaliação individual de sangramento/contraindicações. Não aprova profilaxia para cirurgia ou qualquer grupo externo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/padua/calculator.js",
+    "bytes": 5381,
+    "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "8788ce4fb338b7db7f03a971cbe3062afb33ee05f1ea793dfe5d127da1603b06",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "54d98cb92084e57420c919a052ceaab74c31ed6d31bed03911ab464b89225ba0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "54d98cb92084e57420c919a052ceaab74c31ed6d31bed03911ab464b89225ba0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
