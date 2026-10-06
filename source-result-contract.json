@@ -1,0 +1,193 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "padua",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "45176ee5fbe9e43d84395c851347948c3732a69a",
+    "oldEngineSha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9",
+    "currentEngineSha256": "189ee9d1c7c272723c7cba6d8ea861b582e30a73dce27b2da51350d3a3d21ef9"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+      "input": {
+        "idade": true,
+        "infeccao": true,
+        "cancer": false,
+        "tev": false,
+        "mobilidade": false,
+        "trombofilia": false,
+        "trauma": false,
+        "icc": false,
+        "iam": false,
+        "obesidade": false,
+        "hormonio": false
+      },
+      "publicOutput": {
+        "id": "padua",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Escore de Pádua",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Escore de Pádua",
+        "level": "low",
+        "verdict": "Baixo risco: TEV em 0,3% sem profilaxia",
+        "note": "Profilaxia farmacológica não indicada; estimular deambulação.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Corte: câncer ativo e ICC: 4 pontos",
+      "input": {
+        "cancer": true,
+        "icc": true,
+        "tev": false,
+        "mobilidade": false,
+        "trombofilia": false,
+        "trauma": false,
+        "idade": false,
+        "iam": false,
+        "infeccao": false,
+        "obesidade": false,
+        "hormonio": false
+      },
+      "publicOutput": {
+        "id": "padua",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Escore de Pádua",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Escore de Pádua",
+        "level": "high",
+        "verdict": "Alto risco: TEV em 11% sem profilaxia",
+        "note": "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento.",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+      "input": {
+        "mobilidade": true,
+        "tev": true,
+        "idade": true,
+        "obesidade": true,
+        "cancer": false,
+        "trombofilia": false,
+        "trauma": false,
+        "icc": false,
+        "iam": false,
+        "infeccao": false,
+        "hormonio": false
+      },
+      "publicOutput": {
+        "id": "padua",
+        "main": [
+          "8",
+          "pontos"
+        ],
+        "label": "Escore de Pádua",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 8,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "8",
+          "pontos"
+        ],
+        "label": "Escore de Pádua",
+        "level": "high",
+        "verdict": "Alto risco: TEV em 11% sem profilaxia",
+        "note": "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento.",
+        "raw": {
+          "score": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

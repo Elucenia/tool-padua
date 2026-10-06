@@ -1,0 +1,537 @@
+{
+  "id": "padua",
+  "implementationVersion": "padua@native-2026-10-05+189ee9d1c7c2",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baixo risco: TEV em 0,3% sem profilaxia",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Profilaxia farmacológica não indicada; estimular deambulação.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto risco: TEV em 11% sem profilaxia",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto risco: TEV em 11% sem profilaxia",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Indicar tromboprofilaxia farmacológica (HBPM, heparina não fracionada ou fondaparinux), se não houver risco alto de sangramento.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low risk: VTE in 0.3% without prophylaxis",
+            "locale": "en",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "Pharmacological prophylaxis is not indicated; encourage ambulation.",
+            "locale": "en",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High risk: VTE in 11% without prophylaxis",
+            "locale": "en",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indicate pharmacological thromboprophylaxis (LMWH, unfractionated heparin or fondaparinux), if there is no high bleeding risk.",
+            "locale": "en",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High risk: VTE in 11% without prophylaxis",
+            "locale": "en",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indicate pharmacological thromboprophylaxis (LMWH, unfractionated heparin or fondaparinux), if there is no high bleeding risk.",
+            "locale": "en",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bajo riesgo: TEV en 0,3% sin profilaxis",
+            "locale": "es",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "La profilaxis farmacológica no está indicada; estimular la deambulación.",
+            "locale": "es",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto riesgo: TEV en 11% sin profilaxis",
+            "locale": "es",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indicar tromboprofilaxis farmacológica (HBPM, heparina no fraccionada o fondaparinux) si no hay alto riesgo de sangrado.",
+            "locale": "es",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto riesgo: TEV en 11% sin profilaxis",
+            "locale": "es",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indicar tromboprofilaxis farmacológica (HBPM, heparina no fraccionada o fondaparinux) si no hay alto riesgo de sangrado.",
+            "locale": "es",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faible risque : TVE à 0,3 % sans prophylaxie",
+            "locale": "fr",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "La prophylaxie pharmacologique n’est pas indiquée ; encourager la mobilisation.",
+            "locale": "fr",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque élevé : TVE à 11 % sans prophylaxie",
+            "locale": "fr",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indiquer une thromboprophylaxie pharmacologique (HBPM, héparine non fractionnée ou fondaparinux) s’il n’existe pas de risque hémorragique élevé.",
+            "locale": "fr",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque élevé : TVE à 11 % sans prophylaxie",
+            "locale": "fr",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indiquer une thromboprophylaxie pharmacologique (HBPM, héparine non fractionnée ou fondaparinux) s’il n’existe pas de risque hémorragique élevé.",
+            "locale": "fr",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges Risiko: VTE bei 0,3 % ohne Prophylaxe",
+            "locale": "de",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "Eine medikamentöse Prophylaxe ist nicht indiziert; Mobilisation fördern.",
+            "locale": "de",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohes Risiko: VTE bei 11 % ohne Prophylaxe",
+            "locale": "de",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Pharmakologische Thromboseprophylaxe (LMWH, unfraktioniertes Heparin oder Fondaparinux) anzeigen, wenn kein hohes Blutungsrisiko besteht.",
+            "locale": "de",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohes Risiko: VTE bei 11 % ohne Prophylaxe",
+            "locale": "de",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Pharmakologische Thromboseprophylaxe (LMWH, unfraktioniertes Heparin oder Fondaparinux) anzeigen, wenn kein hohes Blutungsrisiko besteht.",
+            "locale": "de",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio basso: TEV nello 0,3% senza profilassi",
+            "locale": "it",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "La profilassi farmacologica non è indicata; incoraggiare la deambulazione.",
+            "locale": "it",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio elevato: TEV nell'11% senza profilassi",
+            "locale": "it",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indicare tromboprofilassi farmacologica (EBPM, eparina non frazionata o fondaparinux) se non vi è un rischio elevato di sanguinamento.",
+            "locale": "it",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio elevato: TEV nell'11% senza profilassi",
+            "locale": "it",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "Indicare tromboprofilassi farmacologica (EBPM, eparina non frazionata o fondaparinux) se non vi è un rischio elevato di sanguinamento.",
+            "locale": "it",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر منخفض: TEV بنسبة 0,3% دون وقاية",
+            "locale": "ar",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "الوقاية الدوائية غير مُشار إليها؛ شجّع المشي.",
+            "locale": "ar",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر مرتفع: TEV بنسبة 11% دون وقاية",
+            "locale": "ar",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "استطب الوقاية الخثرية الدوائية (HBPM، الهيبارين غير المجزأ أو فوندابارينوكس) إذا لم يكن هناك خطر مرتفع للنزف.",
+            "locale": "ar",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر مرتفع: TEV بنسبة 11% دون وقاية",
+            "locale": "ar",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "استطب الوقاية الخثرية الدوائية (HBPM، الهيبارين غير المجزأ أو فوندابارينوكس) إذا لم يكن هناك خطر مرتفع للنزف.",
+            "locale": "ar",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低风险：无预防时 TEV 为 0,3%",
+            "locale": "zh",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "不建议药物预防；鼓励活动。",
+            "locale": "zh",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高风险：无预防时 TEV 为 11%",
+            "locale": "zh",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "如无高出血风险，应给予药物性血栓预防（HBPM、普通肝素或磺达肝癸钠）。",
+            "locale": "zh",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高风险：无预防时 TEV 为 11%",
+            "locale": "zh",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "如无高出血风险，应给予药物性血栓预防（HBPM、普通肝素或磺达肝癸钠）。",
+            "locale": "zh",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低リスク：予防なしでTEV 0.3%",
+            "locale": "ja",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "薬物予防は適応されない。歩行を促す。",
+            "locale": "ja",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高リスク：予防なしでTEV 11%",
+            "locale": "ja",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "高い出血リスクがなければ、薬物による血栓予防（LMWH、未分画ヘパリンまたはフォンダパリヌクス）を行う。",
+            "locale": "ja",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高リスク：予防なしでTEV 11%",
+            "locale": "ja",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "高い出血リスクがなければ、薬物による血栓予防（LMWH、未分画ヘパリンまたはフォンダパリヌクス）を行う。",
+            "locale": "ja",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Pneumonia em paciente de 75 anos: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "निम्न जोखिम: प्रोफिलैक्सिस के बिना TEV 0,3%",
+            "locale": "hi",
+            "template": "documented-authored-28165d568b18fd2e434a"
+          },
+          "note": {
+            "text": "औषधीय प्रोफिलैक्सिस संकेतित नहीं है; चलने-फिरने को प्रोत्साहित करें।",
+            "locale": "hi",
+            "template": "documented-authored-c2a6058d6884859f7880"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: câncer ativo e ICC: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च जोखिम: प्रोफिलैक्सिस के बिना TEV 11%",
+            "locale": "hi",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "यदि उच्च रक्तस्राव जोखिम न हो, तो औषधीय थ्रोम्बोप्रोफिलैक्सिस (HBPM, अनफ्रैक्शन्ड हेपारिन या फोंडापैरिनक्स) का संकेत दें।",
+            "locale": "hi",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Acamado, TEV prévio, 72 anos, obeso: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च जोखिम: प्रोफिलैक्सिस के बिना TEV 11%",
+            "locale": "hi",
+            "template": "documented-authored-478e672f4a73ef387a64"
+          },
+          "note": {
+            "text": "यदि उच्च रक्तस्राव जोखिम न हो, तो औषधीय थ्रोम्बोप्रोफिलैक्सिस (HBPM, अनफ्रैक्शन्ड हेपारिन या फोंडापैरिनक्स) का संकेत दें।",
+            "locale": "hi",
+            "template": "documented-authored-e48f686080cc3aa79fcf"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

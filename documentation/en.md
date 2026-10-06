@@ -97,3 +97,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low risk: VTE in 0.3% without prophylaxis
+
+Pharmacological prophylaxis is not indicated; encourage ambulation.
+
+
+### 2
+
+High risk: VTE in 11% without prophylaxis
+
+Indicate pharmacological thromboprophylaxis (LMWH, unfractionated heparin or fondaparinux), if there is no high bleeding risk.
+
+
+### 3
+
+High risk: VTE in 11% without prophylaxis
+
+Indicate pharmacological thromboprophylaxis (LMWH, unfractionated heparin or fondaparinux), if there is no high bleeding risk.
+

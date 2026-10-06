@@ -97,3 +97,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Rischio basso: TEV nello 0,3% senza profilassi
+
+La profilassi farmacologica non è indicata; incoraggiare la deambulazione.
+
+
+### 2
+
+Rischio elevato: TEV nell'11% senza profilassi
+
+Indicare tromboprofilassi farmacologica (EBPM, eparina non frazionata o fondaparinux) se non vi è un rischio elevato di sanguinamento.
+
+
+### 3
+
+Rischio elevato: TEV nell'11% senza profilassi
+
+Indicare tromboprofilassi farmacologica (EBPM, eparina non frazionata o fondaparinux) se non vi è un rischio elevato di sanguinamento.
+

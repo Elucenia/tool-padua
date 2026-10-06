@@ -295,7 +295,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Padua Prediction Score/Barbar 2010:11 fatores,0–20; paciente clínicohospitalizado",
-    "implementationVersion": "padua@native-2026-10-03+2dc89004c4f2",
+    "implementationVersion": "padua@native-2026-10-05+189ee9d1c7c2",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/20738765/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -595,7 +595,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+      "implementationHash": "189ee9d1c7c272723c7cba6d8ea861b582e30a73dce27b2da51350d3a3d21ef9",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "padua@native-2026-10-03+2dc89004c4f2",
+          "previousImplementationHash": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9",
+          "implementationHash": "189ee9d1c7c272723c7cba6d8ea861b582e30a73dce27b2da51350d3a3d21ef9",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "ece4968b1c6c03a7c2860cd41252a86d085788fe87536aa4ec4f1dd20f2dc8a3",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Padua foi estudado em pacientes clínicos internados em medicina interna, com seguimento de tromboembolismo sintomático até 90 dias. A estratificação trombótica deve ser acompanhada de avaliação de sangramento, contraindicações e protocolo de profilaxia. O total não substitui essa análise nem implica aplicação automática à população cirúrgica.",
     "sourceLimitEvidence": {
@@ -614,20 +642,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/padua/calculator.js",
-    "bytes": 5381,
-    "sha256": "2dc89004c4f2502176b1f439c2036c035fd792e36c33139e0058923265ba60f9"
+    "bytes": 5586,
+    "sha256": "189ee9d1c7c272723c7cba6d8ea861b582e30a73dce27b2da51350d3a3d21ef9"
   },
-  "sourceToolSha256": "8788ce4fb338b7db7f03a971cbe3062afb33ee05f1ea793dfe5d127da1603b06",
+  "sourceToolSha256": "a23468179c288790b13b08eef99867bb89c0e9da51999bc54e83dabe2ecf644b",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "54d98cb92084e57420c919a052ceaab74c31ed6d31bed03911ab464b89225ba0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "54d98cb92084e57420c919a052ceaab74c31ed6d31bed03911ab464b89225ba0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
